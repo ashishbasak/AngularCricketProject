@@ -1,0 +1,59 @@
+<div class="mainDiv">
+<table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+
+<ng-container matColumnDef="dateTime">
+    <th mat-header-cell *matHeaderCellDef> Date and Time</th>
+    <td mat-cell *matCellDef="let element"> {{element.dateTimeGMT}} </td>
+  </ng-container>
+
+  <ng-container matColumnDef="team-1">
+      <th mat-header-cell *matHeaderCellDef> Team 1</th>
+      <td mat-cell *matCellDef="let element"> {{element['team-1']}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="team-2">
+        <th mat-header-cell *matHeaderCellDef> Team 2</th>
+        <td mat-cell *matCellDef="let element"> {{element['team-2']}} </td>
+      </ng-container>
+
+
+      <ng-container matColumnDef="type">
+          <th mat-header-cell *matHeaderCellDef>Type</th>
+          <td mat-cell *matCellDef="let element"> {{element.type}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="toss_winner_team">
+            <th mat-header-cell *matHeaderCellDef>Toss Winner Team</th>
+            <td mat-cell *matCellDef="let element"> {{element.toss_winner_team}} </td>
+          </ng-container>
+         
+
+          <ng-container matColumnDef="winner_team">
+              <th mat-header-cell *matHeaderCellDef>Toss Winner Team</th>
+              <td mat-cell *matCellDef="let element"> {{element.winner_team}} </td>
+            </ng-container>
+
+            <ng-container matColumnDef="matchStarted">
+                <th mat-header-cell *matHeaderCellDef>Match Started</th>
+                <td mat-cell *matCellDef="let element"> {{element.matchStarted}} </td>
+              </ng-container>
+
+              <ng-container matColumnDef="addToFav">
+                  <th mat-header-cell *matHeaderCellDef>Add To Favourites</th>
+                  <td mat-cell *matCellDef="let element"><button mat-icon-button [ngClass]="heartButtonCss" (click)="addToFavourites(element)">
+                      <mat-icon>favorite</mat-icon>
+                    </button> </td>
+                </ng-container>
+
+
+  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+  <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+</table>
+<mat-paginator [length]="100"
+              [pageSize]="5"
+              [pageSizeOptions]="[5, 10, 25, 100]">
+</mat-paginator>
+</div>
+
+
