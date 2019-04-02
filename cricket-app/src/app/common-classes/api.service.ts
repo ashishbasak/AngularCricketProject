@@ -15,4 +15,25 @@ export class ApiService{
         return this.httpClient.get(url);
     }
 
+    checkLogin():Observable<any>{
+
+        const url="http://localhost:3000/users";
+
+        return this.httpClient.get(url);
+    }
+
+  addUser(postedData): Observable<any> {
+    const url="http://localhost:3000/users";
+
+    const httpOptions = {
+        headers: new HttpHeaders({
+          'Content-Type': 'application/json',
+          
+        })
+      };
+
+    return this.httpClient.post(url, postedData, httpOptions);
+  
+
+}
 }

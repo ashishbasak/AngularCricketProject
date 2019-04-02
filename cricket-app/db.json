@@ -1,24 +1,72 @@
 {
-  "posts": [
+  "users": [
     {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
+      "id": "ashish",
+      "password": "ashish",
+      "favmatches": [
+        {
+          "unique_id": 1175366,
+          "date": "2019-03-31T00:00:00.000Z",
+          "team-1": "Sunrisers Hyderabad",
+          "team-2": "Royal Challengers Bangalore",
+          "type": "Twenty20",
+          "toss_winner_team": "Royal Challengers Bangalore",
+          "winner_team": "Sunrisers Hyderabad",
+          "matchStarted": true
+        },
+        {
+          "unique_id": 1157629,
+          "date": "2019-03-31T00:00:00.000Z",
+          "team-1": "Titans",
+          "team-2": "Dolphins",
+          "type": "ListA",
+          "toss_winner_team": "Dolphins",
+          "winner_team": "Titans",
+          "matchStarted": true
+        },
+        {
+          "unique_id": 1157629,
+          "date": "2019-03-31T00:00:00.000Z",
+          "team-1": "Titans",
+          "team-2": "Dolphins",
+          "type": "ListA",
+          "toss_winner_team": "Dolphins",
+          "winner_team": "Titans",
+          "matchStarted": true
+        }
+      ]
     },
     {
-      "id": 2,
-      "title": "json-server-2",
-      "author": "typicode-2"
-    }
-  ],
-  "comments": [
+      "id": "daksh",
+      "password": "daksh",
+      "favmatches": [
+        {
+          "unique_id": 1175366,
+          "date": "2019-03-31T00:00:00.000Z",
+          "team-1": "Sunrisers Hyderabad",
+          "team-2": "Royal Challengers Bangalore",
+          "type": "Twenty20",
+          "toss_winner_team": "Royal Challengers Bangalore",
+          "winner_team": "Sunrisers Hyderabad",
+          "matchStarted": true
+        }
+      ]
+    },
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "id": "daksh123",
+      "password": "pass",
+      "favmatches": []
+    },
+    {
+      "id": "rakesh",
+      "password": "rakesh",
+      "favmatches": []
+    },
+    {
+      "id": "test",
+      "password": "test",
+      "favmatches": []
     }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  ]
+  
 }

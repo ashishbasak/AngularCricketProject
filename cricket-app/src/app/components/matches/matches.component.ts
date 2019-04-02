@@ -12,10 +12,16 @@ export class MatchesComponent implements OnInit {
   dataSource:any;
   displayedColumns: string[];
   heartButtonClicked;
-  heartButtonCss={
+  heartButtonCss:{};
+
+  meth(){
+    
+  this.heartButtonCss={
     "buttonClicked":this.heartButtonClicked,
     "buttonNotClicked":!this.heartButtonClicked
   }
+  return this.heartButtonCss;
+}
 
   constructor(private apiService:ApiService) { 
 
@@ -27,13 +33,11 @@ export class MatchesComponent implements OnInit {
   @ViewChild(MatPaginator) paginator: MatPaginator;   
 
   ngOnInit() {
-
     //subscribe me data aaya and then i used data inside a function which is called inside subscribe
     this.apiService.getAllMatches().subscribe(data=>{
         this.dataSource = new MatTableDataSource(data.matches);
         console.log(this.dataSource)
         this.dataSource.paginator = this.paginator;
-
     })
 
   }
@@ -42,7 +46,6 @@ export class MatchesComponent implements OnInit {
     this.heartButtonClicked=true;
     console.log("b clicked",this.heartButtonClicked);
     console.log("element selected is ",element);
-
   }
 
 }

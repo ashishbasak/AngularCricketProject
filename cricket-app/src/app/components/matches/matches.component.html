@@ -41,7 +41,7 @@
 
               <ng-container matColumnDef="addToFav">
                   <th mat-header-cell *matHeaderCellDef>Add To Favourites</th>
-                  <td mat-cell *matCellDef="let element"><button mat-icon-button [ngClass]="heartButtonCss" (click)="addToFavourites(element)">
+                  <td mat-cell *matCellDef="let element"><button mat-icon-button [ngClass]="meth() " (click)="addToFavourites(element)">
                       <mat-icon>favorite</mat-icon>
                     </button> </td>
                 </ng-container>
