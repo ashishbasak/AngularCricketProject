@@ -19,13 +19,15 @@ import { MatchesComponent } from './components/matches/matches.component';
 import { ApiService } from './common-classes/api.service';
 import { LoginSignupComponent } from './components/login-signup/login-signup.component';
 import { TabsComponent } from './components/tabs/tabs.component';
+import { FavouriteComponent } from './components/favourite/favourite.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MatchesComponent,
     LoginSignupComponent,
-    TabsComponent
+    TabsComponent,
+    FavouriteComponent
   ],
   imports: [
     BrowserModule,
@@ -34,6 +36,7 @@ import { TabsComponent } from './components/tabs/tabs.component';
     MatTabsModule,
     MatIconModule,
     HttpClientModule,
+
     MatTableModule,
     MatButtonModule,
     MatPaginatorModule,

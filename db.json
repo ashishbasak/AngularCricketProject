@@ -1,0 +1,52 @@
+{
+  "users": [
+    {
+      "id": "ashish",
+      "password": "ashish",
+      "favmatches": [
+        {
+          "unique_id": 1175368,
+          "date": "2019-04-01T00:00:00.000Z",
+          "team-1": "Kings XI Punjab",
+          "team-2": "Delhi Capitals",
+          "type": "Twenty20",
+          "toss_winner_team": "Delhi Capitals",
+          "winner_team": "Kings XI Punjab",
+          "matchStarted": true
+        },
+        {
+          "unique_id": 1175369,
+          "date": "2019-04-02T00:00:00.000Z",
+          "team-1": "Rajasthan Royals",
+          "team-2": "Royal Challengers Bangalore",
+          "type": "Twenty20",
+          "matchStarted": false
+        },
+        {
+          "unique_id": 1175370,
+          "date": "2019-04-03T00:00:00.000Z",
+          "team-1": "Mumbai Indians",
+          "team-2": "Chennai Super Kings",
+          "type": "Twenty20",
+          "matchStarted": false
+        }
+      ]
+    },
+    {
+      "id": "daksh",
+      "password": "daksh",
+      "favmatches": [
+        {
+          "unique_id": 1175366,
+          "date": "2019-03-31T00:00:00.000Z",
+          "team-1": "Sunrisers Hyderabad",
+          "team-2": "Royal Challengers Bangalore",
+          "type": "Twenty20",
+          "toss_winner_team": "Royal Challengers Bangalore",
+          "winner_team": "Sunrisers Hyderabad",
+          "matchStarted": true
+        }
+      ]
+    }
+  ]
+}

@@ -8,16 +8,14 @@ th.mat-header-cell {
 }
 
 .buttonClicked{
-    color:red;
 }
 
 .buttonNotClicked{
-    color:black ;
+    color:black;
 }
 
-.heartButtonCss{
-   color:yellow ;
-
+.heartButtonCss:hover,:focus{
+    color: red;
 }
 
 .mainDiv{

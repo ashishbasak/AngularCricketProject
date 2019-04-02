@@ -1,7 +1,5 @@
 <div class="mainDiv">
 <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
-
-
 <ng-container matColumnDef="dateTime">
     <th mat-header-cell *matHeaderCellDef> Date and Time</th>
     <td mat-cell *matCellDef="let element"> {{element.dateTimeGMT}} </td>
@@ -30,7 +28,7 @@
          
 
           <ng-container matColumnDef="winner_team">
-              <th mat-header-cell *matHeaderCellDef>Toss Winner Team</th>
+              <th mat-header-cell *matHeaderCellDef>Winner Team</th>
               <td mat-cell *matCellDef="let element"> {{element.winner_team}} </td>
             </ng-container>
 
@@ -41,7 +39,11 @@
 
               <ng-container matColumnDef="addToFav">
                   <th mat-header-cell *matHeaderCellDef>Add To Favourites</th>
-                  <td mat-cell *matCellDef="let element"><button mat-icon-button [ngClass]="meth() " (click)="addToFavourites(element)">
+                  <td mat-cell *matCellDef="let element"><button mat-icon-button [ngClass]="{
+                    'buttonClicked':this.heartButtonClicked,
+                    'buttonNotClicked':!this.heartButtonClicked,
+                    heartButtonCss:true
+                  }" (click)="addToFavourites(element)">
                       <mat-icon>favorite</mat-icon>
                     </button> </td>
                 </ng-container>
